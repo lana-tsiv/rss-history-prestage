@@ -1,0 +1,96 @@
+body {
+  width: 1440px;
+  display: flex;
+  margin: 0 auto;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+header {
+  top: 0px;
+  width: 100%;
+  height: 90px;
+  display: flex;
+  padding: 0 120px;
+  position: absolute;
+  align-items: center;
+  box-sizing: border-box;
+  background: rgba(242, 120, 92, 0.7);
+  box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
+}
+
+header img {
+  width: 30px;
+  height: 30px;
+}
+
+header h1 {
+  font-size: 32px;
+  margin-left: 6px;
+  font-weight: 600;
+  color: #ffffff;
+  line-height: 39px;
+  font-style: normal;
+  font-family: "Magra";
+  white-space: nowrap;
+}
+
+header nav {
+  width: 100%;
+  display: flex;
+  margin-left: 158px;
+  align-items: center;
+}
+
+header nav :not(:first-child) {
+  margin-left: 42px;
+}
+
+header nav a {
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+  line-height: 21px;
+  font-style: normal;
+  text-decoration: none;
+  font-family: "Red Hat Text";
+}
+
+header button {
+  height: 41px;
+  border: none;
+  width: 103px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 500;
+  color: #ffffff;
+  line-height: 21px;
+  padding: 10px 30px;
+  font-style: normal;
+  border-radius: 10px;
+  background: #0d606f;
+  font-family: "Red Hat Text";
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+    0px 2px 3px rgba(13, 96, 111, 0.16);
+}
+
+section {
+  width: 100%;
+}
+
+.preview {
+  height: 765px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("./assets/backgrounds/first.png");
+}
