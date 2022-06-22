@@ -230,3 +230,64 @@ form {
   color: #0d606f;
   margin-top: 30px;
 }
+
+.destinations {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.destinations h1 {
+  font-family: "Red Hat Text";
+  margin-top: 0;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 53px;
+  color: #f2785c;
+}
+
+.slider {
+  width: 100%;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.slider span {
+  position: absolute;
+  font-family: "Red Hat Text";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 42px;
+  color: #ffffff;
+}
+
+.japan {
+  bottom: 40px;
+  left: 24%;
+}
+.usa {
+  bottom: 41px;
+  right: 12%;
+}
+
+.pagination {
+  display: flex;
+}
+
+.pagination div {
+  width: 20px;
+  height: 20px;
+  margin-top: 24px;
+  border-radius: 50%;
+  background: rgba(242, 120, 92, 0.5);
+}
+
+.pagination div:nth-child(2) {
+  background: #f2785c;
+  margin: 24px 10px 0 10px;
+}
