@@ -94,3 +94,80 @@ section {
   background-repeat: no-repeat;
   background-image: url("./assets/backgrounds/first.png");
 }
+
+.preview div {
+  width: 892px;
+  height: 422px;
+  box-sizing: border-box;
+  margin: 122px 0 0 120px;
+}
+
+.preview div h1 {
+  font-size: 80px;
+  font-weight: 700;
+  color: #FFFFFF;
+  line-height: 96px;
+  font-style: normal;
+  font-family: 'Aleo';
+  margin-bottom: 32px;
+}
+
+.preview div p {
+  font-family: "Aleo";
+  font-style: italic;
+  font-weight: 700;
+  font-size: 20px;
+  color: #ffffff;
+  line-height: 24px;
+  margin-bottom: 46px;
+}
+
+input {
+  width: 892px;
+  height: 95px;
+  border: none;
+  outline: none;
+  color: #f2785c;
+  font-size: 24px;
+  font-family: "Aleo";
+  font-style: italic;
+  font-weight: 400;
+  border-radius: 16px;
+  line-height: 29px;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 41px 291px 41px 41px;
+}
+
+input::placeholder {
+  font-family: "Aleo";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #f2785c;
+}
+
+form button {
+  top: 18px;
+  right: 18px;
+  width: 228px;
+  border: none;
+  height: 59px;
+  outline: none;
+  font-size: 24px;
+  font-weight: 500;
+  color: #ffffff;
+  font-style: normal;
+  line-height: 32px;
+  position: absolute;
+  padding: 10px 32px;
+  border-radius: 10px;
+  background: #0d606f;
+  font-family: "Red Hat Text";
+  box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08),
+    0px 2px 3px rgba(13, 96, 111, 0.16);
+}
+
+form {
+  position: relative;
+}
