@@ -307,9 +307,9 @@ form {
   gap: 10px;
   background: #0d606f;
   box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08),
-  0px 2px 3px rgba(13, 96, 111, 0.16);
+    0px 2px 3px rgba(13, 96, 111, 0.16);
   border-radius: 10px;
-  
+
   color: #ffffff;
   font-family: "Red Hat Text";
   font-style: normal;
@@ -318,3 +318,44 @@ form {
   line-height: 32px;
 }
 
+.stories {
+  width: 100%;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.stories h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f2785c;
+  font-family: "Red Hat Text";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 53px;
+}
+
+.rectangulars-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 1331px;
+  font-family: "Aleo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #0d606f;
+  padding-bottom: 61px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("./assets/backgrounds/last.png");
+}
+
+.rectangular-wrapper {
+  display: flex;
+  
+  justify-content: space-between;
+  align-items: center;
+}
