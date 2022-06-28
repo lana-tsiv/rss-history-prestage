@@ -48,7 +48,7 @@ header h1 {
 header nav {
   width: 100%;
   display: flex;
-  margin-left: 158px;
+  margin-left: 165px;
   align-items: center;
 }
 
@@ -162,6 +162,7 @@ form button {
   position: absolute;
   padding: 10px 32px;
   border-radius: 10px;
+  cursor: pointer;
   background: #0d606f;
   font-family: "Red Hat Text";
   box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08),
@@ -296,6 +297,7 @@ form {
 
 .destinations button {
   display: flex;
+  cursor: pointer;
   justify-content: center;
   align-items: center;
   padding: 10px 32px;
@@ -358,7 +360,7 @@ form {
   align-items: center;
   font-family: "Aleo";
   font-style: normal;
-  margin: 0 125px 0 120px;
+  margin: 0px 125px 0 120px;
   box-sizing: border-box;
   justify-content: space-between;
 }
@@ -375,8 +377,17 @@ form {
 }
 
 .rectangular-wrapper img {
-  margin: 26px 32px 0px 0px;
+  width: 400px;
+  height: 250px;
+  border-radius: 16px;
+  margin: 30px 40px 0 0;
+  filter: drop-shadow(0px 4px 4px #0d606f);
 }
+
+.rectangular-wrapper:first-child {
+  margin-top: 20px;
+}
+
 
 .stories button {
   display: flex;
@@ -390,6 +401,7 @@ form {
   border: none;
   outline: none;
   gap: 10px;
+  cursor: pointer;
   background: #0d606f;
   box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08),
     0px 2px 3px rgba(13, 96, 111, 0.16);
@@ -445,4 +457,16 @@ footer img {
 .twiter-icon {
   top: 22px;
   right: 120px;
+}
+
+button:hover {
+  transition: 0.55s;
+  background: #084752;
+  transform: translateZ(0) scale(1.03);
+}
+
+a:hover {
+  color: #0d606f;
+  transition: 0.55s;
+  transform: translateZ(0) scale(1.03);
 }
