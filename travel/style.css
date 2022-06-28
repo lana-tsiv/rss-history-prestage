@@ -34,7 +34,7 @@ header img {
   height: 30px;
 }
 
-header h1 {
+header span {
   font-size: 32px;
   margin-left: 6px;
   font-weight: 600;
@@ -64,6 +64,12 @@ header nav a {
   font-style: normal;
   text-decoration: none;
   font-family: "Red Hat Text";
+}
+
+header nav a:hover {
+  color: #0d606f;
+  transition: 0.55s;
+  transform: translateZ(0) scale(1.03);
 }
 
 header button {
@@ -183,7 +189,7 @@ form {
   align-items: center;
 }
 
-.steps h1 {
+.steps h2 {
   font-family: "Red Hat Text";
   font-style: normal;
   font-weight: 500;
@@ -240,7 +246,7 @@ form {
   align-items: center;
 }
 
-.destinations h1 {
+.destinations h2 {
   font-family: "Red Hat Text";
   margin-top: -10px;
   font-style: normal;
@@ -327,7 +333,7 @@ form {
   margin-top: 50px;
 }
 
-.stories h1 {
+.stories h2 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -365,7 +371,8 @@ form {
   justify-content: space-between;
 }
 
-.rectangular-wrapper h2 {
+.rectangular-wrapper h3 {
+  font-weight: 400;
   font-size: 35px;
   line-height: 42px;
   margin: 30px 0px 0px 0;
@@ -462,11 +469,5 @@ footer img {
 button:hover {
   transition: 0.55s;
   background: #084752;
-  transform: translateZ(0) scale(1.03);
-}
-
-a:hover {
-  color: #0d606f;
-  transition: 0.55s;
   transform: translateZ(0) scale(1.03);
 }
