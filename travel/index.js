@@ -7,7 +7,7 @@ const App = () => {
   for (let anchor of anchors) {
     anchor.addEventListener("click", (e) => {
       e.preventDefault();
-      const blockID = anchor.getAttribute("href").substr(1);
+      const blockID = anchor?.getAttribute("href").replace("#", "");
 
       document.getElementById(blockID).scrollIntoView({
         behavior: "smooth",
@@ -17,10 +17,25 @@ const App = () => {
   }
 
   const navHandler = () => menu.classList.add("active");
-  const closeHandler = () => menu.classList.remove("active");
+  const closeHandler = (e) => {
+    if (
+      e.target.id !== "nav" &&
+      e.target.id !== "burger" &&
+      e.target.id !== "burger-line1" &&
+      e.target.id !== "burger-line2" &&
+      e.target.id !== "burger-line3"
+    ) {
+      menu.classList.remove("active");
+    }
 
-  burgerItem.addEventListener("click", navHandler);
+    if (e.target.id === "close") {
+      menu.classList.remove("active");
+    }
+  };
+
   close.addEventListener("click", closeHandler);
+  burgerItem.addEventListener("click", navHandler);
+  document.addEventListener("click", (e) => closeHandler(e));
 };
 
 document.addEventListener("DOMContentLoaded", App);
