@@ -66,6 +66,11 @@ header nav a {
   font-family: "Red Hat Text";
 }
 
+header nav a:nth-child(5),
+header nav a:nth-child(6) {
+  display: none;
+}
+
 header nav a:hover {
   color: #0d606f;
   transition: 0.55s;
@@ -517,14 +522,13 @@ button:hover {
   }
 
   header {
-    top: 15px;
     width: 100%;
     display: flex;
     box-shadow: none;
     align-items: center;
-    padding: 0px 32px 0 16px;
+    padding: 30px 32px 0 16px;
     justify-content: space-between;
-    background-color: transparent;
+    background: linear-gradient(180deg, #0d606f 0%, rgba(13, 96, 111, 0) 70%);
   }
 
   header button {
@@ -532,44 +536,10 @@ button:hover {
   }
 
   .header_burger {
-    width: 25px;
+    width: 24px;
     height: 16px;
     display: block;
-  }
-
-  header nav {
-    display: flex;
-    margin: 0;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    width: 100%;
-    height: 251px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: #f2785c;
-    border-radius: 16px;
-    z-index: 10;
-    padding: 75px;
-    transform: translateX(100%); 
-    transition: 0.2s all linear;
-  }
-
-  .active {
-    transform: translateX(0) !important;
-  }
-
-  header nav :not(:first-child) {
-    width: 100%;
-    margin-left: 0;
-    margin-bottom: 30px;
-  }
-
-  header nav a {
-    font-size: 42px;
-    line-height: 48px;
-    margin-bottom: 30px;
+    margin-right: -6px;
   }
 
   header nav :last-child {
@@ -577,21 +547,13 @@ button:hover {
   }
 
   .header_nav-close {
-    width: 40px;
-    height: 40px;
-    position: absolute;
     top: 20px;
-    right: 20px;
+    left: 12px;
+    width: 15px;
     z-index: 11;
-  }
-
-  .header_nav-close-line {
-    display: block;
-    width: 100%;
-    height: 2px;
-    background-color: #ffffff;
+    height: 15px;
     position: absolute;
-    top: 50%;
+    margin: 0 !important;
   }
 
   header span {
@@ -668,55 +630,60 @@ button:hover {
       0px 2px 3px rgba(13, 96, 111, 0.16);
   }
 
+  .active {
+    transform: translateX(37%) !important;
+  }
+
   header nav {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    width: 100%;
-    height: 251px;
-    position: fixed;
     top: 0;
     left: 0;
-    background-color: #f2785c;
-    border-radius: 16px;
     z-index: 10;
-    padding: 75px;
-    transform: translateX(100%);
-    transition: 0.2s all linear;
-  }
-
-  header nav :active {
-    transform: translateX(0);
-  }
-
-  header nav :not(:first-child) {
-    width: 100%;
-    margin-left: 0;
-    margin-bottom: 30px;
+    width: 165px;
+    height: 250px;
+    display: flex;
+    position: fixed;
+    border-radius: 10px;
+    padding: 40px 10px 0 0;
+    box-sizing: border-box;
+    background-color: #f2785c;
+    transform: translateX(250%);
+    transition: 0.4s all linear;
+    box-shadow: 0px 4px 3px rgba(13, 96, 111, 0.25);
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: flex-start;
   }
 
   header nav a {
-    font-size: 42px;
-    line-height: 48px;
-    margin-bottom: 30px;
+    margin: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    font-style: normal;
+    font-family: "Red Hat Text";
   }
 
-  header nav a:last-child {
-    margin-bottom: 0;
+  header nav a:nth-child(5),
+  header nav a:nth-child(6) {
+    display: flex;
   }
 
-  .header_nav-close {
-    top: 20px;
-    right: 10px;
-    cursor: pointer;
-    position: absolute;
+  header nav a:nth-child(6) {
+    margin: 7px 5px 5px 5px;
+  }
+
+  header nav a:nth-child(1) {
+    margin: 3px 5px 5px 5px;
+  }
+
+  header nav a:nth-child(2) {
+    margin: 7px 5px 5px 5px;
   }
 
   .header_nav-close:before,
   .header_nav-close:after {
-    width: 40px;
-    height: 3px;
+    width: 20px;
+    height: 2px;
     content: "";
     position: absolute;
     background: white;
