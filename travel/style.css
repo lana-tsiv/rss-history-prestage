@@ -552,12 +552,12 @@ button:hover {
     border-radius: 16px;
     z-index: 10;
     padding: 75px;
-    transform: translateX(100%);
+    transform: translateX(100%); 
     transition: 0.2s all linear;
   }
 
-  header nav :active {
-    transform: translateX(0);
+  .active {
+    transform: translateX(0) !important;
   }
 
   header nav :not(:first-child) {
