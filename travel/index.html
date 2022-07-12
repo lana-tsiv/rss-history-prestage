@@ -207,21 +207,6 @@
         src="./assets/icons/twiter.svg"
       />
     </footer>
-    <script>
-      const anchors = document.querySelectorAll('a[href*="#"]');
-
-      for (let anchor of anchors) {
-        anchor.addEventListener("click", (e) => {
-          e.preventDefault();
-          const blockID = anchor.getAttribute("href").substr(1);
-
-          document.getElementById(blockID).scrollIntoView({
-            behavior: "smooth",
-            block: "start",
-          });
-        });
-      }
-    </script>
     <script src="./index.js"></script>
   </body>
 </html>
