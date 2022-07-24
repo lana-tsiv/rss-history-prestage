@@ -15,6 +15,59 @@
     <title>Travel</title>
   </head>
   <body>
+    <div class="popup">
+      <div class="popup_content">
+        <a href="" class="popup_close"></a>
+        <p>Log in to your account</p>
+        <button class="butt_face">Sign In with Facebook</button>
+        <button class="butt_goog">Sign In with Google</button>
+        <div class="delimeter_one">
+          <div></div>
+          <span>or</span>
+          <div></div>
+        </div>
+        <form class="popup_form">
+          <label>E-mail</label>
+          <input type="email" name="email" required />
+          <label>Password</label>
+          <input
+            type="password"
+            name="password"
+            pattern="[a-z0-5]{8,}"
+            required
+          />
+        </form>
+
+        <button class="butt_signIn">Sign In</button>
+        <p>Forgot Your Password?</p>
+        <p>Don’t have an account? Register</p>
+      </div>
+    </div>
+
+    <!-- sign up pop up -->
+    <div class="signUp">
+      <div class="signUp_content">
+        <a href="" class="signUp_close"></a>
+        <span>Create account</span>
+        <form class="signUp_form">
+          <label>E-mail</label><input type="email" name="email" required />
+          <label>Password</label>
+          <input
+            type="password"
+            name="password"
+            pattern="[a-z0-5]{8,}"
+            required
+          />
+        </form>
+        <button>Sign up</button>
+        <div class="delimeter"></div>
+        <div class="already_have_account">
+          <span class="second">Already have an account?</span>
+          <span class="third">Log in</span>
+        </div>
+      </div>
+    </div>
+    <!--  -->
     <header>
       <img src="./assets/icons/logo-header.svg" alt="logo" />
       <span>Travel Portal</span>
@@ -32,7 +85,6 @@
         <div id="burger-line2" class="burger_line burger_line_second"></div>
         <div id="burger-line3" class="burger_line burger_line_third"></div>
       </div>
-
       <button>Login</button>
     </header>
     <main>
