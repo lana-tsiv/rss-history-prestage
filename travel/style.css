@@ -42,7 +42,7 @@
   line-height: 18px;
   font-style: normal;
   font-family: "Aleo";
-  font-size: 14px !important;
+  font-size: 15px !important;
   text-decoration-line: underline;
   text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.16);
 }
@@ -87,6 +87,11 @@
   color: #ffffff;
 }
 
+.butt_face:hover {
+  background: #1877f2;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
 .butt_goog {
   margin-top: 20px;
   letter-spacing: 0em;
@@ -94,6 +99,11 @@
   box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08),
     0px 2px 3px rgba(13, 96, 111, 0.16);
   color: #0d606f;
+}
+
+.butt_goog:hover {
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .butt_signIn {
@@ -537,10 +547,12 @@ form {
 
 .destinations {
   display: flex;
+  overflow: hidden;
   margin-top: 27px;
-  flex-direction: column;
-  justify-content: center;
+  max-width: 1440px;
   align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .destinations h2 {
@@ -554,15 +566,26 @@ form {
 }
 
 .slider {
-  width: 100%;
+  left: 0;
   display: flex;
   margin-top: 10px;
   position: relative;
   align-items: center;
-  justify-content: space-between;
+  transition: all ease 1s;
+  justify-content: flex-start;
 }
 
-.slider img:nth-child(1) {
+.slider img {
+  width: 800px;
+  height: 800px;
+  margin: 0 30px;
+  cursor: pointer;
+  border-radius: 16px;
+}
+
+.slider img:nth-child(1),
+.slider img:nth-child(2),
+.slider img:nth-child(3) {
   display: none;
 }
 
@@ -577,16 +600,23 @@ form {
 }
 
 .spain {
-  display: none;
+  bottom: 40px;
+  left: 29.4%;
+}
+
+.spain2 {
+  bottom: 40px;
+  right: 26.1%;
 }
 
 .japan {
   bottom: 40px;
-  left: 23.35%;
+  left: 43.6%;
 }
+
 .usa {
   bottom: 41px;
-  right: 12.35%;
+  right: 41%;
 }
 
 .pagination {
@@ -596,9 +626,14 @@ form {
 .pagination div {
   width: 20px;
   height: 20px;
+  cursor: pointer;
   margin-top: 24px;
   border-radius: 50%;
   background: rgba(242, 120, 92, 0.5);
+}
+
+.pagination div:hover {
+  background: #f2785c;
 }
 
 .pagination div:nth-child(2) {
@@ -1035,22 +1070,24 @@ button:hover {
 
   .destinations {
     display: flex;
-    margin-top: 25px;
+    padding-top: 25px;
+    max-width: 390px;
     position: relative;
+    align-items: center;
+    margin-top: 0 !important;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     box-sizing: border-box;
   }
 
   .destinations h2 {
-    font-family: "Red Hat Text";
-    margin-top: -10px;
-    font-style: normal;
+    color: #f2785c;
     font-weight: 500;
     font-size: 14px;
+    margin-top: -10px;
+    font-style: normal;
     line-height: 18.52px;
-    color: #f2785c;
+    font-family: "Red Hat Text";
   }
 
   .slider {
@@ -1061,24 +1098,22 @@ button:hover {
     justify-content: center;
   }
 
-  .slider img:nth-child(1) {
-    display: flex;
+  .slider img:not(:nth-child(1)),
+  .slider img:not(:nth-child(2)),
+  .slider img:not(:nth-child(3)) {
+    display: none;
+  }
+
+  .slider img:nth-child(1),
+  .slider img:nth-child(2),
+  .slider img:nth-child(3) {
+    display: block;
+  }
+
+  .slider img {
     width: 360px;
     height: 210px;
-    left: 15px;
     border-radius: 16px;
-  }
-
-  .slider img:nth-child(2) {
-    display: none;
-  }
-
-  .slider img:nth-child(3) {
-    display: none;
-  }
-
-  .slider img:nth-child(4) {
-    display: none;
   }
 
   .slider span {
@@ -1091,21 +1126,23 @@ button:hover {
     color: #ffffff;
   }
 
-  .spain {
-    display: flex;
+  .japan {
     bottom: 175px;
     left: 7.5%;
   }
 
-  .japan {
-    display: none;
-    bottom: 40px;
-    left: 23.35%;
-  }
   .usa {
+    bottom: 175px;
+    left: 116%;
+  }
+
+  .spain {
+    bottom: 175px;
+    left: -100%;
+  }
+
+  .spain2 {
     display: none;
-    bottom: 41px;
-    right: 12.35%;
   }
 
   .arrow {
@@ -1118,9 +1155,15 @@ button:hover {
     width: 16px;
     height: 16px;
     transform: rotate(45deg);
+    border-top: 3px solid rgba(242, 120, 92, 0.5);
+    border-right: 3px solid rgba(242, 120, 92, 0.5);
+    margin-right: 10px;
+  }
+
+  .arrow-right:hover,
+  .arrow-left:hover {
     border-top: 3px solid #f2785c;
     border-right: 3px solid #f2785c;
-    margin-right: 10px;
   }
 
   .arrow-left {
